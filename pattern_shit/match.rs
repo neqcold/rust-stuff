@@ -16,7 +16,7 @@ fn main() {
         Message::Hello { id: Id(x @ 8..=10) } => 
             println!("found an id in range [8;10]: {}", x),
         Message::Hello { id: Id(x) } if accept_unknown_ids => 
-            println!("accepted a message the unknown id: {}", x),
+            println!("accepted a message an unknown id: {}", x),
         _ => println!("refused a message with an unknown id")
     }
 }
